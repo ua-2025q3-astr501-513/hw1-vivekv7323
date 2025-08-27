@@ -1,10 +1,13 @@
-# ASTR 513 Homework Set #___
+# ASTR 513 Homework Set #1
 
-Welcome to the repository for **Homework Set #___** in ASTR 513.
+Welcome to the repository for **Homework Set #1** in ASTR 513.
 This homework set is worth **5 points** and is designed to test your
 understanding of topics that we covered in the first three classes.
-The submission cutoff time is at **Wednesday ___, 11:59pm**
+The submission cutoff time is at **Wednesday Sep 10th, 11:59pm**
 Arizona time.
+Use this GitHub Classroom Link:
+https://classroom.github.com/a/r-eqz-mO
+to accept it.
 
 
 ## Structure and Grading
@@ -26,41 +29,63 @@ and maximize your score.
 
 ## Parts
 
-### Part 1: ___ (1 point)
+### Part 1: Setup Python Package (1 point)
 
 * Objective:
-  ___
+  Learn how to set up and organize a pip-installable python package.
 * Details:
-  ___
+  * Fill in details in "pyproject.toml" and add a "LICENSE" file to
+    this repository.
+    This turns your homework set into a pip-installable python
+    package.
+  * Properly organize source code, tests, and documentations.
 
-### Part 2: ___ (1 point)
+### Part 2: Integer Negation and Subtraction Using NAND Gates (1 point)
 
 * Objective:
-  ___
+  Implement a function that performs integer negation using only NAND
+  gates and use it to implement subtraction.
 * Details:
-  ___
+  The description of the problem and the solution template can be
+  found in `hw1/p2.py`.
 
-### Part 3: ___ (1 point)
+### Part 3: Implement a Numerically Stable Quadratic Equation Solver (1 point)
 
 * Objective:
-  ___
+  Implement a numerically stable quadratic equation solver that does
+  not catastrophic cancellation.
 * Details:
-  ___
+  The description of the problem and the solution template can be
+  found in `hw1/p3.py`.
 
-### Part 4: ___ (1 point)
+### Part 4: Solve the Coupled Simple Harmonic Oscillator Problem (1 point)
 
 * Objective:
-  ___
+  Implement an eigenvalue solver to decompose coupled simple harmonic
+  sscillators into eigenmodes, and solve it semi-analytically.
 * Details:
-  ___
+  The description of the problem and the solution template can be
+  found in `hw1/p4.py`.
 
-### Part 5: ___ (1 point)
+### Part 5: Providing Project Ideas (1 point)
 
 * Objective:
-  ___
+  Provide draft project ideas in order to form teams.
 * Details:
-  ___
-
+  * This part ensures student start putting time to brainstorm their
+    (mid-term) projects.
+  * Your submission should include three project ideas based on the
+    topics that are covered in the first half of this course:
+    * Data Representation and Errors
+    * Numerical Linear Algebra
+    * Fourier Transform and Spectral Analysis
+    * Interpolation and Extrapolation
+    * Numerical and Automatic Derivatives
+    * Numerical Integration of Functions
+    * Root Finding and Optimization Methods
+    * ODE Integrators
+    * PDE Solvers
+  * You submission will be a well formatted YAML file `hw1/p5.yaml`.
 
 ## Submission Guidelines
 
