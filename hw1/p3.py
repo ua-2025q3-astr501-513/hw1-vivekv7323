@@ -36,11 +36,11 @@ def quadratic(a, b, c):
 
     The standard quadratic formula
 
-        x = (-b \pm sqrt(b^2 - 4ac)) / (2a)
+        x = (-b +- sqrt(b^2 - 4ac)) / (2a)
 
     is algebraically correct but can suffer from *catastrophic
     cancellation* when b^2 >> 4ac and the sign of b matches the
-    chosen \pm.
+    chosen +-.
     In that case, subtracting two nearly equal numbers causes a large
     loss of precision.
 
