@@ -47,7 +47,7 @@ def full_adder(A, B, Cin):
     Cout = OR(c, C)
     return S, Cout
 
-def multibit_adder(A, B):
+def multibit_adder(A, B, carrybit=False):
     assert(len(A) == len(B))
 
     n = len(A)
@@ -56,7 +56,8 @@ def multibit_adder(A, B):
     for i in range(n):
         s, c = full_adder(A[i], B[i], c)
         S.append(s)
-    S.append(c)  # add the final carry
+    if carrybit:
+        S.append(c)  # add the extra carry bit
     return S
 
 # Now, getting into the assignment, we would like to first implement a
