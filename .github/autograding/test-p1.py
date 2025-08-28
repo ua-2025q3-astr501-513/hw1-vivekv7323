@@ -4,6 +4,8 @@
 # (pyproject.toml, etc.) are set up correctly so that the required
 # submodules can be imported.
 
+from pathlib import Path
+
 def test_import():
     """Test whether the module structure is correctly configured for
     imports.
@@ -19,3 +21,6 @@ def test_import():
         from hw1 import p2, p3, p4  # import required submodules
     except ImportError as e:
         assert False, f"Module import failed: {e}"
+
+    if not Path('LICENSE').is_file():
+        assert False, "'LICENSE' does not exist"
