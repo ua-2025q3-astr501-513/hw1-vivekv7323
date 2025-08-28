@@ -17,10 +17,7 @@ def agree(x, t):
 def compare(s, t1, t2, a=1, b=2, c=1):
     x1, x2 = quadratic(a, b, c)
 
-    print(s)
-    print(f"{a=}, {b=}, {c=}")
-    print(f"{t1=}, {t2=}")
-    print(f"{x1=}, {x2=}")
+    print(f"[{s}] Input: {a} {b} {c}, {t1} {t2}, Result: {x1} {x2}")
 
     assert agree(x1, t1)
     assert agree(x2, t2)
