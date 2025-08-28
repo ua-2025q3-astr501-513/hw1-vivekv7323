@@ -18,6 +18,6 @@
 name = "hw1"
 version = ...
 dependencies = [
-    "pytest",
+    "pytest",  # must include pytest because we use it for autograding
     ...
 ]
