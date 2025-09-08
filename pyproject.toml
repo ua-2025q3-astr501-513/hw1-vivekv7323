@@ -18,5 +18,5 @@
 name = "hw1"
 version = "v1.0"
 dependencies = [
-    "pytest"
+    "pytest", "numpy"
 ]
