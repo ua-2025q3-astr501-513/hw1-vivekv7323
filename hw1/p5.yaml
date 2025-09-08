@@ -38,9 +38,14 @@
 
 # TODO: Edit this sample idea.
 
+- topic: Fourier Transform/Spectral Analyses
+  idea:  Model a point spread function and add/subtract it to image data using convolution
+
 - topic: Numerical Linear Algebra
-  idea:  Develop a fast matrix multiplication algorithm to reduce
-         energy consumption during deep learning inference.
+  idea:  Use PCA to make the most effective background model to subtract from polluted image data
+
+- topic: Numerical ODE
+  idea:  Integrate the radiative transfer equation for any stellar temperature profile to estimate limb darkening
 
 # TODO: Add two more project ideas below, following the same format as
 # the example above.

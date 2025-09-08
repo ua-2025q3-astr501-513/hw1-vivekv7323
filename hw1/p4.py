@@ -45,10 +45,13 @@ class CoupledOscillators:
             k  (float):              spring constant (assumed identical for all springs).
 
         """
-        # TODO: Construct the stiffness matrix K
-        # TODO: Solve the eigenvalue problem for K to find normal modes
-        # TODO: Store angular frequencies and eigenvectors
-        # TODO: Compute initial modal amplitudes M0 (normal mode decomposition)
+        K = np.diag(len(X0)*[2*k]) - np.diag((len(X0)- 1)*[k], k=1) - np.diag((len(X0)- 1)*[k], k=-1)
+
+        self.eigenvalues, self.eigenvectors = np.linalg.eig(K/m)
+        self.eigenvectors = self.eigenvectors.T
+        
+        self.omega = np.sqrt(self.eigenvalues)
+        self.amps = self.eigenvectors @ X0
 
     def __call__(self, t):
         """Calculate the displacements of the oscillators at time t.
@@ -60,7 +63,10 @@ class CoupledOscillators:
             np.ndarray: displacements of the oscillators at time t.
 
         """
-        # TODO: Reconstruct the displacements from normal modes
+
+        n =  np.cos(t*self.omega) * self.amps
+
+        return np.dot(n, self.eigenvectors)
 
 
 if __name__ == "__main__":
